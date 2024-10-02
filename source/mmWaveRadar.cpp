@@ -71,10 +71,14 @@ void mmWaveRadar::read() {
         dataPort.ReadByte(byte);
         buf.push_back(byte);
     }
+
+    std::cout << "parse frames" << std::endl;
+    std::cout << "buf size: " << buf.size() << std::endl;
     
     parseFrames(buf, frame, frames);
 
     for (std::vector<uint8_t> &_frame : frames) {
+        std::cout << "parse frame" << std::endl;
         parseFrame(_frame);
     }
     frames.clear();
