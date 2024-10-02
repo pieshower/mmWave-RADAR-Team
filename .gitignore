@@ -1,0 +1,6 @@
+
+# ignore debug files
+.vscode/
+
+# ignore build files
+build/
