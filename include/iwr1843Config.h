@@ -27,7 +27,7 @@ const char* iwr1843ConfigCommands[] = {
     "calibDcRangeSig -1 0 -5 8 256",
     "extendedMaxVelocity -1 0",
     "lvdsStreamCfg -1 0 0 0",
-    "compRangeBiasAndRxChanPhase 0.0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0",
+    "compRangeBiasAndRxChanPhase 0.0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0",
     "measureRangeBiasAndRxChanPhase 0 1.5 0.2",
     "CQRxSatMonitor 0 3 5 121 0",
     "CQSigImgMonitor 0 127 4",
