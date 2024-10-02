@@ -108,8 +108,8 @@ void mmWaveRadar::parseFrame(std::vector<uint8_t> &_frame) {
     // std::cout << "Actual parsed packet length: " << dataHeader.totalPacketLen << std::endl;
     // std::cout << "current number of objects detected: " << dataHeader.numDetectedObj << std::endl;
     parseFrameTL(_frame, dataTL);
-    // std::cout << "current number tlv length: " << dataTL.length << std::endl << std::endl;
-    parseFrameDetectedObjects(_frame, detectedObject, detectedObjects);
+    std::cout << "TLV Type: " << dataTL.type << std::endl << std::endl;
+    // parseFrameDetectedObjects(_frame, detectedObject, detectedObjects);
     // updateDataComplete(dataComplete, dataHeader, dataTL, detectedObjects);
 }
 
